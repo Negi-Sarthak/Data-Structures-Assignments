@@ -1,26 +1,29 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int arr[100], n, i, key, low, high, mid, flag = 0;
-    printf("Enter size of array: ");
-    scanf("%d",&n);
-    printf("Enter elements (sorted):\n");
-    for(i=0;i<n;i++) scanf("%d",&arr[i]);
+    int arr[100], n, key, low, high, mid;
+    bool found = false;
 
-    printf("Enter key to search: ");
-    scanf("%d",&key);
+    cout << "Enter size of array: ";
+    cin >> n;
+    cout << "Enter elements (sorted):\n";
+    for(int i=0;i<n;i++) cin >> arr[i];
+
+    cout << "Enter key to search: ";
+    cin >> key;
 
     low=0; high=n-1;
     while(low<=high) {
         mid=(low+high)/2;
         if(arr[mid]==key) {
-            printf("Found at position %d\n", mid);
-            flag=1;
+            cout << "Found at position " << mid << endl;
+            found = true;
             break;
         }
         else if(arr[mid]<key) low=mid+1;
         else high=mid-1;
     }
-    if(flag==0) printf("Not found\n");
+    if(!found) cout << "Not found\n";
     return 0;
 }
