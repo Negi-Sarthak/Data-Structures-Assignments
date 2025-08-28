@@ -1,15 +1,16 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int arr[100], n, i, sum=0, total;
-    printf("Enter n: ");
-    scanf("%d",&n);
-    printf("Enter %d numbers from 1 to %d (one missing):\n", n-1, n);
-    for(i=0;i<n-1;i++) {
-        scanf("%d",&arr[i]);
+    int arr[100], n, sum=0;
+    cout << "Enter n: ";
+    cin >> n;
+    cout << "Enter " << n-1 << " numbers from 1 to " << n << ":\n";
+    for(int i=0;i<n-1;i++) {
+        cin >> arr[i];
         sum+=arr[i];
     }
-    total=n*(n+1)/2;
-    printf("Missing number = %d\n", total-sum);
+    int total=n*(n+1)/2;
+    cout << "Missing number = " << total-sum << endl;
     return 0;
 }
