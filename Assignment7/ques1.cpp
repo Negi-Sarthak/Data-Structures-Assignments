@@ -1,12 +1,3 @@
-/*
-1. Write a program to implement following sorting techniques:
-a. Selection Sort
-b. Insertion Sort
-c. Bubble Sort
-d. Merge Sort
-e. Quick Sort
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -113,10 +104,6 @@ int main() {
     cout << "Original Array: ";
     printArray(arr, n);
     selectionSort(arr, n);
-    // insertionSort(arr, n);
-    // bubbleSort(arr, n);
-
-    // mergeSort(arr, 0, n-1);
 
     quickSort(arr, 0, n-1);
 
