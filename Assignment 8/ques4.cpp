@@ -1,7 +1,3 @@
-/*
-4. Write a program to determine whether a given binary tree is a BST or not.
-*/
-
 #include <iostream>
 #include <limits.h>
 using namespace std;
