@@ -1,6 +1,3 @@
-/*
-Implement Heapsort (Increasing/Decreasing order).
-*/
 
 #include <iostream>
 using namespace std;
