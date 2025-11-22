@@ -1,10 +1,3 @@
-/*
-2. A slightly improved selection sort – We know that selection sort algorithm takes the minimum on
-every pass on the array, and place it at its correct position. The idea is to take also the maximum on
-every pass and place it at its correct position. So in every pass, we keep track of both maximum and
-minimum and array becomes sorted from both ends. Implement this logic.
-*/
-
 #include <iostream>
 using namespace std;
 
