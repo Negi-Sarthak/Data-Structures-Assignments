@@ -1,11 +1,3 @@
-/*
-Write a program to implement the following graph algorithms:
-1. Breadth First Search (BFS)
-2. Depth First Search (DFS)
-3. Minimum Spanning Tree (Kruskal and Prim)
-4. Dijkstra's Shortest Path Algorithm
-*/
-
 #include <iostream>
 #include <vector>
 #include <queue>
